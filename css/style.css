@@ -1,1 +1,160 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Abril Fatface", cursive;
+  font-weight: bold;
+}
+
+p,
+a {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.btn-pazioli {
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+}
+.btn-pazioli.contained {
+  background-color: #000000;
+  color: #ffffff;
+}
+.btn-pazioli.contained:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  cursor: pointer;
+}
+.btn-pazioli.contained:active {
+  background-color: #000000;
+}
+.btn-pazioli.outlined {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+}
+.btn-pazioli.outlined:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  cursor: pointer;
+}
+.btn-pazioli.outlined:active {
+  background-color: #000000;
+}
+
+.newModel {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 42px;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
+  min-height: 761px;
+}
+@media screen and (min-width: 992px) {
+  .newModel {
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.820101) 14.06%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 55.32%, rgba(255, 255, 255, 0.6454) 88.52%, #FFFFFF 97.7%);
+  }
+}
+.newModel__video {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  height: 330px;
+}
+@media screen and (min-width: 992px) {
+  .newModel__video {
+    height: 761px;
+  }
+}
+.newModel__title {
+  font-family: "Abril Fatface", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+.newModel .newEbony {
+  color: #ffffff;
+  text-align: center;
+}
+.newModel .newEbony__title {
+  margin-top: 29px;
+  font-family: "Abril Fatface", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+@media screen and (min-width: 992px) {
+  .newModel .newEbony__title {
+    margin-top: 0;
+  }
+}
+.newModel .newEbony__reviews {
+  margin-top: 17px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+}
+.newModel .newEbony__reviews p {
+  margin-bottom: 0;
+}
+.newModel .newEbony__reviews-ranking {
+  margin-left: 20px;
+}
+.newModel .newEbony__price {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  margin-bottom: 14px;
+}
+.newModel .newEbony__description {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+.newModel .newEbony__feature {
+  justify-content: space-between;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  max-width: 228px;
+  margin: 0 auto;
+  margin-bottom: 34px;
+}
+.newModel .newEbony__feature-item {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+}
+.newModel .newEbony__feature-item:first-child {
+  list-style: none;
+}
+.newModel .newEbony__btn-add {
+  width: 228px;
+  height: 32px;
+}/*# sourceMappingURL=style.css.map */

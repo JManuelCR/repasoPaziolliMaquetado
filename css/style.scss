@@ -1,4 +1,6 @@
 @use './base';
+@use './mixins';
+@use './components/buttons';
 @use './home/navbar';
 @use './home/hero';
 @use './home/newModels';
