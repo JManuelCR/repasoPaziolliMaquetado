@@ -56,9 +56,8 @@ a {
   overflow: hidden;
   padding-bottom: 42px;
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
-  min-height: 761px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .newModel {
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.820101) 14.06%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 55.32%, rgba(255, 255, 255, 0.6454) 88.52%, #FFFFFF 97.7%);
   }
@@ -70,9 +69,9 @@ a {
   top: 0;
   height: 330px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .newModel__video {
-    height: 761px;
+    height: 100vw;
   }
 }
 .newModel__title {
@@ -83,6 +82,13 @@ a {
   line-height: 32px;
   text-align: center;
   letter-spacing: 0.05em;
+}
+@media screen and (min-width: 992px) {
+  .newModel__title {
+    margin-top: 30px;
+    margin-bottom: 96px;
+    font-size: 32px;
+  }
 }
 .newModel .newEbony {
   color: #ffffff;
@@ -143,6 +149,11 @@ a {
   margin: 0 auto;
   margin-bottom: 34px;
 }
+@media screen and (min-width: 992px) {
+  .newModel .newEbony__feature {
+    margin-left: 0;
+  }
+}
 .newModel .newEbony__feature-item {
   font-family: "Raleway";
   font-style: normal;
@@ -157,4 +168,12 @@ a {
 .newModel .newEbony__btn-add {
   width: 228px;
   height: 32px;
+}
+.newModel__piano {
+  max-height: 264px;
+}
+@media screen and (min-width: 768px) {
+  .newModel__piano {
+    max-height: 463px;
+  }
 }/*# sourceMappingURL=style.css.map */

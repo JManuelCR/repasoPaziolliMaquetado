@@ -6,11 +6,11 @@
     overflow: hidden;
     padding-bottom: 42px;
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
-    min-height: 761px;
+    
 
 
 
-    @include mixins.responsive(variables.$large) {
+    @include mixins.responsive(variables.$medium) {
         background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.820101) 14.06%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 55.32%, rgba(255, 255, 255, 0.6454) 88.52%, #FFFFFF 97.7%);
     }
 
@@ -21,8 +21,8 @@
         top: 0;
         height: 330px;
 
-        @include mixins.responsive(variables.$large) {
-            height: 761px;
+        @include mixins.responsive(variables.$medium) {
+            height: 100vw;
         }
     }
 
@@ -34,6 +34,12 @@
         line-height: 32px;
         text-align: center;
         letter-spacing: 0.05em;
+
+        @include mixins.responsive(variables.$large){
+            margin-top: 30px;
+            margin-bottom: 96px;
+            font-size: 32px;
+        }
 
     }
 
@@ -53,6 +59,7 @@
 
             @include mixins.responsive(variables.$large){
                 margin-top: 0;
+                
             }
 
         }
@@ -101,6 +108,10 @@
             max-width: 228px;
             margin: 0 auto;
             margin-bottom: 34px;
+
+            @include mixins.responsive(variables.$large){
+                margin-left: 0;
+            }
             &-item{
                 font-family: 'Raleway';
                 font-style: normal;
@@ -117,6 +128,14 @@
         &__btn-add {
             width: 228px;
             height: 32px;
+        }
+    }
+
+    &__piano{
+        max-height: 264px;
+
+        @include mixins.responsive(variables.$medium){
+            max-height: 463px;
         }
     }
 }
