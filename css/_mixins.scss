@@ -1,0 +1,79 @@
+@use './variables';
+
+@mixin btn-pazioli() {
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+
+    &.contained {
+        background-color: variables.$black-900;
+        color: variables.$white;
+
+        &:hover {
+            background-color: variables.$black-700;
+            color: variables.$white;
+            cursor: pointer;
+        }
+
+        &:active {
+            background-color: variables.$black-900;
+
+        }
+    }
+
+    &.outlined {
+        background-color: variables.$white;
+        color: variables.$black-900;
+        border: 1px solid variables.$black-900;
+
+        &:hover {
+            background-color: variables.$black-700;
+            color: variables.$white;
+            cursor: pointer;
+        }
+
+        &:active {
+            background-color: variables.$black-900;
+
+        }
+
+    }
+
+}
+
+@mixin responsive($breakpoint) {
+    @if ($breakpoint == variables.$small) {
+        @media screen and (min-width: variables.$small) {
+          @content;
+        }
+      }
+      @if ($breakpoint == variables.$medium) {
+        @media screen and (min-width: variables.$medium) {
+          @content;
+        }
+      }
+      @if ($breakpoint == variables.$large) {
+        @media screen and (min-width: variables.$large) {
+          @content;
+        }
+      }
+      @if ($breakpoint == variables.$extra-large) {
+        @media screen and (min-width: variables.$extra-large) {
+          @content;
+        }
+      }
+      @if ($breakpoint == variables.$extra-extra-large) {
+        @media screen and (min-width: variables.$extra-extra-large) {
+          @content;
+        }
+      }
+      @if ($breakpoint == variables.$extra-4k) {
+        @media screen and (min-width: variables.$extra-4k) {
+          @content;
+        }
+      }
+
+}
