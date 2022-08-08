@@ -51,6 +51,50 @@ a {
   background-color: #000000;
 }
 
+.navbar__list .nav-item .nav-link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  margin-right: 22px;
+  padding: 0%;
+}
+.navbar .btn-pazioli {
+  width: 129px;
+  height: 32px;
+  text-decoration: none;
+  padding: 8px;
+}
+.navbar__add-car {
+  background-color: transparent;
+  border: 0;
+  width: 47px;
+  height: 37px;
+}
+@media screen and (min-width: 992px) {
+  .navbar__add-car {
+    width: 35px;
+    height: 35px;
+  }
+}
+.navbar__add-car .car-img {
+  width: 47px;
+  height: 37px;
+}
+@media screen and (min-width: 992px) {
+  .navbar__add-car .car-img {
+    width: 35px;
+    height: 35px;
+  }
+}
+.navbar__add-car .car-counter {
+  width: 24px;
+  height: 17px;
+  margin-top: 15px;
+  margin-right: 12px;
+}
+
 .newModel {
   position: relative;
   overflow: hidden;

@@ -1,0 +1,51 @@
+@use "../variables";
+@use "../mixins";
+
+.navbar {
+  &__list {
+    .nav-item {
+      .nav-link {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        color: variables.$black-900;
+        margin-right: 22px;
+        padding: 0%;
+      }
+    }
+  }
+
+  .btn-pazioli {
+    width: 129px;
+    height: 32px;
+    text-decoration: none;
+    padding: 8px;
+  }
+
+    &__add-car {
+      background-color: transparent;
+      border: 0;
+      width: 47px;
+      height: 37px;
+      @include mixins.responsive(variables.$large) {
+        width: 35px;
+        height: 35px;
+      }
+      .car-img {
+        width: 47px;
+        height: 37px;
+        @include mixins.responsive(variables.$large) {
+          width: 35px;
+          height: 35px;
+        }
+      }
+      .car-counter {
+        width: 24px;
+        height: 17px;
+        margin-top: 15px;
+        margin-right: 12px;
+      }
+    }
+  
+}
