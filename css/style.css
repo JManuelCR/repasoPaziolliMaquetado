@@ -103,6 +103,11 @@ a {
   margin-top: 63px;
   margin-bottom: 18px;
 }
+@media screen and (min-width: 992px) {
+  .hero__subtitle {
+    margin-top: 66px;
+  }
+}
 .hero__heading {
   font-style: normal;
   font-weight: 400;
@@ -110,6 +115,13 @@ a {
   line-height: 43px;
   letter-spacing: 0.05em;
   margin-bottom: 32px;
+}
+@media screen and (min-width: 992px) {
+  .hero__heading {
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 76px;
+  }
 }
 .hero__wrapper-btn {
   margin-bottom: 56px;
@@ -121,8 +133,22 @@ a {
 .hero__wrapper-btn .outlined {
   margin-left: 16px;
 }
+@media screen and (min-width: 992px) {
+  .hero__wrapper-btn {
+    margin-bottom: 96px;
+  }
+}
 .hero__image {
   margin-bottom: 56px;
+}
+@media screen and (min-width: 992px) {
+  .hero__image {
+    margin-bottom: 109px;
+  }
+}
+.hero__rrss {
+  right: 0;
+  bottom: 103px;
 }
 
 .newModel {
