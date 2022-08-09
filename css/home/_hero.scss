@@ -1,0 +1,38 @@
+@use "../variables";
+@use "../mixins";
+
+
+.hero {
+    &__subtitle{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 63px;
+        margin-bottom: 18px;
+    }
+
+    &__heading {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 43px;
+        letter-spacing: 0.05em;
+        margin-bottom: 32px;
+    }
+
+    &__wrapper-btn {
+        margin-bottom: 56px;
+        .btn-pazioli{
+            height: 32px;
+            width: 129px;
+        }
+        .outlined {
+            margin-left: 16px;
+        }
+    }
+
+    &__image {
+        margin-bottom: 56px;
+    }
+}
