@@ -1,0 +1,52 @@
+@use '../variables';
+.contactUs{
+ 
+        background-image: url(/assets/home/bg-contactUs.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+      
+    &__container{
+        max-width: 65%;
+        margin: auto;
+        
+        
+    }
+
+    &__contain{
+       width: 115%;
+       transform: translateX(-8%);
+        
+    }
+
+    &__title{
+        margin-top: 150px;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+        font-size: variables.$h2 ;
+        
+    }
+    &__text{
+        text-align: center;
+        font-size: variables.$text;
+        font-weight: 500;
+        
+    }
+    &__form{
+        font-weight: 800;
+        
+    }
+    &__input{
+        background-color: black;
+        opacity: .6;
+    }
+    &__btn{
+        background-color: black;
+        margin:12px;
+        width: 95%;
+        color: white;
+        margin: auto;
+        margin-bottom: 75px;
+    }
+}
