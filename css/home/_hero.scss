@@ -1,4 +1,73 @@
-@use "../mixins";
 @use "../variables";
+@use "../mixins";
 
+.hero {
+    position: relative;
+  &__subtitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 63px;
+    margin-bottom: 18px;
+    @include mixins.responsive(variables.$large) {
+      margin-top: 66px;
+    }
+  }
+
+  &__heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    letter-spacing: 0.05em;
+    margin-bottom: 32px;
+    @include mixins.responsive(variables.$large) {
+      font-weight: 400;
+      font-size: 56px;
+      line-height: 76px;
+    }
+  }
+
+  &__wrapper-btn {
+    margin-bottom: 56px;
+    .btn-pazioli {
+      height: 32px;
+      width: 129px;
+    }
+    .outlined {
+      margin-left: 16px;
+    }
+    @include mixins.responsive(variables.$large) {
+      margin-bottom: 96px;
+    }
+  }
+
+  &__image {
+    margin-bottom: 56px;
+    max-width: 252px;
+    margin: 0 auto;
+    @include mixins.responsive(variables.$large) {
+      margin-bottom: 109px;
+      max-width: 589px;
+    }
+  }
+
+  &__rrss {
+    display: none;
+    @include mixins.responsive(variables.$large) {
+      margin-bottom: 109px;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      height: 144px;
+      justify-content: space-between;
+      right: 32px;
+      bottom: 83px;
+      z-index: 10;
+
+
+    }
+  }
+}
 
