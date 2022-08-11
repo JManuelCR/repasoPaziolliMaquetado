@@ -5,11 +5,17 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        
+       
       
     &__container{
         max-width: 65%;
         margin: auto;
+        @media(max-width:400px){
+            max-width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
         
         
     }
@@ -17,6 +23,10 @@
     &__contain{
        width: 115%;
        transform: translateX(-8%);
+       @media(max-width:400px){
+        max-width: 95%;
+        margin-left: 10%;;
+        }
         
     }
 
@@ -31,7 +41,11 @@
         text-align: center;
         font-size: variables.$text;
         font-weight: 500;
-        
+        p{
+        @media(max-width:400px){
+            max-width: 100px;
+        }}
+
     }
     &__form{
         font-weight: 800;
@@ -40,6 +54,9 @@
     &__input{
         background-color: black;
         opacity: .6;
+        @media (max-width:400px){
+            max-width: 100%;
+        }
     }
     &__btn{
         background-color: black;
@@ -48,5 +65,6 @@
         color: white;
         margin: auto;
         margin-bottom: 75px;
+        letter-spacing: 1px;
     }
 }

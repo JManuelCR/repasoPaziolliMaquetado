@@ -415,9 +415,22 @@ a {
   max-width: 65%;
   margin: auto;
 }
+@media (max-width: 400px) {
+  .contactUs__container {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 .contactUs__contain {
   width: 115%;
   transform: translateX(-8%);
+}
+@media (max-width: 400px) {
+  .contactUs__contain {
+    max-width: 95%;
+    margin-left: 10%;
+  }
 }
 .contactUs__title {
   margin-top: 150px;
@@ -430,12 +443,22 @@ a {
   font-size: 16px;
   font-weight: 500;
 }
+@media (max-width: 400px) {
+  .contactUs__text p {
+    max-width: 100px;
+  }
+}
 .contactUs__form {
   font-weight: 800;
 }
 .contactUs__input {
   background-color: black;
   opacity: 0.6;
+}
+@media (max-width: 400px) {
+  .contactUs__input {
+    max-width: 100%;
+  }
 }
 .contactUs__btn {
   background-color: black;
@@ -444,6 +467,7 @@ a {
   color: white;
   margin: auto;
   margin-bottom: 75px;
+  letter-spacing: 1px;
 }
 
 .footer {
