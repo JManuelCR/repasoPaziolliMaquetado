@@ -370,4 +370,49 @@ a {
   color: white;
   margin: auto;
   margin-bottom: 75px;
+}
+
+.footer {
+  background: linear-gradient(177.96deg, rgba(255, 255, 255, 0.43) 1.72%, #6F6F6F 107.44%);
+  height: auto;
+}
+.footer__derechos {
+  width: 101%;
+}
+.footer__derechos p {
+  font-size: 12px;
+}
+.footer__autor {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.footer__autor a {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+}
+.footer__title {
+  font-size: 16px;
+  line-height: 19px;
+}
+.footer__adress {
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: 300;
+}
+.footer__adress div {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 400px) {
+  .footer__adress div {
+    max-width: 80%;
+    text-align: center;
+    margin: auto;
+  }
+}
+.footer__text a {
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */
