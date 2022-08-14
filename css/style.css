@@ -470,6 +470,104 @@ a {
   letter-spacing: 1px;
 }
 
+.partners {
+  background: linear-gradient(177.96deg, #6F6F6F 1.72%, #FFFFFF 98.63%);
+}
+.partners__img {
+  background-color: #6F6F6F;
+  background-size: 89px, 89px;
+  width: 30px;
+  height: 50px;
+  position: inherit;
+}
+.partners__img--parispian {
+  width: 50px;
+  height: 20px;
+  transform: translateY(55%);
+}
+.partners__img--yamaha {
+  width: 40px;
+  height: 40px;
+  transform: translateY(13%);
+}
+.partners__img--pianotwo {
+  width: 35px;
+  height: 35px;
+  transform: translateY(20%);
+}
+.partners__circle {
+  background-color: #6f6f6f;
+  border-radius: 50%;
+  padding: 4px;
+  width: 60px;
+  height: 60px;
+  margin-left: -8px;
+  border: 1px solid white;
+}
+.partners__pill {
+  display: flex;
+  min-width: 220px;
+  background: black;
+  color: white;
+  justify-content: space-between;
+}
+.partners__animation1 {
+  -webkit-animation-name: mover;
+          animation-name: mover;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  opacity: 0.7;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translate(-100%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translate(-100%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+.partners__animation2 {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  opacity: 0.7;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+@-webkit-keyframes move {
+  0% {
+    transform: translate(100%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+@keyframes move {
+  0% {
+    transform: translate(100%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+
 .footer {
   background: linear-gradient(177.96deg, rgba(255, 255, 255, 0.43) 1.72%, #6F6F6F 107.44%);
   height: auto;

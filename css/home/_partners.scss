@@ -1,0 +1,84 @@
+.partners{
+    background: linear-gradient(177.96deg, #6F6F6F 1.72%, #FFFFFF 98.63%);
+
+    &__img{
+        background-color: #6F6F6F;
+        background-size: 89px, 89px;
+        width: 30px;
+        height:50px;
+        position: inherit;
+     
+
+        &--parispian{
+            width: 50px;
+            height: 20px;
+            transform: translateY(55%);
+        }
+        &--yamaha{
+            width: 40px;
+            height: 40px;
+            transform: translateY(13%);
+        }
+        &--pianotwo{
+            width: 35px;
+            height: 35px;
+            transform: translateY(20%);
+        }
+    }
+    &__circle{
+        background-color: #6f6f6f;
+        border-radius: 50%;
+        padding: 4px;
+        width: 60px;
+        height: 60px;
+        margin-left: -8px;
+        border: 1px solid white; 
+
+    
+        
+    }
+    &__pill{
+        display: flex;
+        min-width: 220px;
+        background: black;
+        color: white;
+        justify-content: space-between;
+    }
+   
+   
+    &__animation1{
+        animation-name: mover;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-play-state:running;
+        opacity: .7;
+        @keyframes mover {
+            0%{
+                transform:translate(-100%);
+            }
+            
+            100%{
+                transform:translate(0%);
+            }  
+          }    
+    }
+    &__animation2{
+        animation-name: move;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-play-state:running;
+        opacity: .7;
+        margin-left:100px;
+        margin-right:100px;
+        @keyframes move {
+            0%{
+                transform:translate(100%);
+            }
+            
+            100%{
+                transform:translate(0%);
+            }  
+          }    
+    } 
+   
+}   
